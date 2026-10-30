@@ -19,3 +19,4 @@ pymoo>=0.6.0
 
 # Testing & Quality Assurance
 pytest>=7.4.0
+
