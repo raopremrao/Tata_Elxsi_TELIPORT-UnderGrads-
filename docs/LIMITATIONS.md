@@ -1,6 +1,6 @@
-# PackForge Prototype Limitations & Production Roadmap
+# Q-Pack Prototype Limitations & Production Roadmap
 
-In strict compliance with the project's scientific honesty guidelines, this document explicitly lists what the PackForge prototype models, what it does **not** model, and the experimental qualification required before physical production.
+In strict compliance with the project's scientific honesty guidelines, this document explicitly lists what the Q-Pack prototype models, what it does **not** model, and the experimental qualification required before physical production.
 
 ---
 
@@ -18,7 +18,7 @@ In strict compliance with the project's scientific honesty guidelines, this docu
 
 ## 2. Requirements for Production & Hardware Deployment
 
-Before committing any PackForge candidate design to automotive tooling or pilot production:
+Before committing any Q-Pack candidate design to automotive tooling or pilot production:
 
 1. **Cell Characterization Testing**:
    - Comprehensive electrochemical impedance spectroscopy (EIS) across temperature (-10°C to +55°C) and State-of-Charge (0% to 100%).

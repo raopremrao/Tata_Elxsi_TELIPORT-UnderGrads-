@@ -1,4 +1,4 @@
-"""Exhaustive Evaluation and Ground-Truth Generator for PackForge.
+"""Exhaustive Evaluation and Ground-Truth Generator for Q-Pack.
 
 Evaluates all structurally feasible configurations in the discrete design space,
 yielding the true global optimum and true Pareto front for benchmark comparison.

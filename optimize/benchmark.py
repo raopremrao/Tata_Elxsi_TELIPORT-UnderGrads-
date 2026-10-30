@@ -1,4 +1,4 @@
-"""Multi-Seed Benchmark Harness and Honest Verdict Generator for PackForge.
+"""Multi-Seed Benchmark Harness and Honest Verdict Generator for Q-Pack.
 
 Rigorously benchmarks Solvers:
   1. Exhaustive Search (Ground Truth)
@@ -39,7 +39,7 @@ def run_benchmark_suite(
     scenario = Scenario()
     weights = {"cost": 0.25, "peak_temp": 0.20, "mass": 0.15, "charge_time": 0.15, "usable_energy": 0.15, "cycle_life": 0.10}
 
-    print(f"=== Starting PackForge Optimization Benchmark ({n_seeds} seeds) ===")
+    print(f"=== Starting Q-Pack Optimization Benchmark ({n_seeds} seeds) ===")
 
     # 1. Compute Exhaustive Ground Truth
     print("[1/5] Running Exhaustive Search for Ground Truth...")
@@ -191,7 +191,7 @@ def run_benchmark_suite(
     nsga_succ = summary["solvers"]["NSGA_II"]["success_rate_pct"]
     nsga_time = summary["solvers"]["NSGA_II"]["runtime_mean_s"]
 
-    verdict_text = f"""# PackForge Optimization Benchmark: Honest Verdict
+    verdict_text = f"""# Q-Pack Optimization Benchmark: Honest Verdict
 
 **Benchmark Protocol**: {n_seeds} random seeds evaluated over {len(exh.designs)} feasible pack designs.
 Ground truth established via exhaustive simulator evaluation.
@@ -219,7 +219,7 @@ Ground truth established via exhaustive simulator evaluation.
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Run PackForge Benchmark Suite")
+    parser = argparse.ArgumentParser(description="Run Q-Pack Benchmark Suite")
     parser.add_argument("--seeds", type=int, default=30, help="Number of seeds (default: 30)")
     parser.add_argument("--out", type=str, default="outputs/benchmark", help="Output directory")
     args = parser.parse_args()

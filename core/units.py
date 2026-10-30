@@ -1,4 +1,4 @@
-"""Physical Units and Conversion Helpers for PackForge."""
+"""Physical Units and Conversion Helpers for Q-Pack."""
 
 def wh_to_kwh(wh: float) -> float:
     """Convert Watt-hours to Kilowatt-hours."""

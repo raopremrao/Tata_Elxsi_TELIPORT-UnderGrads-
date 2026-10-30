@@ -1,4 +1,4 @@
-"""Cost Subsystem Model for PackForge.
+"""Cost Subsystem Model for Q-Pack.
 
 Calculates itemized Bill-of-Materials (BOM) across cells, BMS, thermal hardware,
 busbars, and structural enclosures.

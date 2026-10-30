@@ -1,4 +1,4 @@
-"""PackForge Reports and Asset Generation Module."""
+"""Q-Pack Reports and Asset Generation Module."""
 
 from reports.make_report import generate_ppt_asset_bundle
 

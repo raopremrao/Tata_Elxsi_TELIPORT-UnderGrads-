@@ -1,4 +1,4 @@
-"""Battery Ageing Subsystem Model for PackForge.
+"""Battery Ageing Subsystem Model for Q-Pack.
 
 NOTE: This is a semi-empirical engineering surrogate model calibrated to cell
 reference cycle life, NOT a multi-physics electrochemical degradation model.

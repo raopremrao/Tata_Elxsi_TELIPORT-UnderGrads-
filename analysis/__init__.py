@@ -1,4 +1,4 @@
-"""PackForge Analysis Module: Constraints, Conflicts, Traceability, and Sensitivity."""
+"""Q-Pack Analysis Module: Constraints, Conflicts, Traceability, and Sensitivity."""
 
 from analysis.constraints import evaluate_requirements
 from analysis.conflicts import detect_conflicts

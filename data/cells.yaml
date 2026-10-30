@@ -1,4 +1,4 @@
-# PackForge Cell Library
+# Q-Pack Cell Library
 # Fields per cell: id, manufacturer, model, chemistry, form_factor, nominal_voltage_V,
 # max_voltage_V, cutoff_voltage_V, capacity_Ah, mass_g, diameter_mm, height_mm,
 # max_continuous_discharge_A, max_pulse_discharge_A, max_charge_A, internal_resistance_mOhm,

@@ -1,4 +1,4 @@
-"""Mechanical Subsystem Model for PackForge.
+"""Mechanical Subsystem Model for Q-Pack.
 
 Calculates pack mass, volume, packing density, and 3D bounding dimensions (L x W x H).
 """

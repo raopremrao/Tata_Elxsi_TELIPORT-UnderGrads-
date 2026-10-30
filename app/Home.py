@@ -1,4 +1,4 @@
-"""PackForge: Reusable Digital Platform for Designing Battery Energy Systems.
+"""Q-Pack: Reusable Digital Platform for Designing Battery Energy Systems.
 Tata Elxsi TELIPORT Season 4 — Case Study 2.
 """
 
@@ -21,7 +21,7 @@ from models.evaluate import evaluate
 from core.schemas import Scenario
 
 st.set_page_config(
-    page_title="PackForge | Battery Energy System Platform",
+    page_title="Q-Pack | Battery Energy System Platform",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -35,7 +35,7 @@ cells = load_cells()
 unverified_count = sum(1 for c in cells.values() if not c.verified)
 if unverified_count > 0:
     st.sidebar.warning(f"⚠️ {unverified_count} cell(s) have unverified datasheets.")
-st.sidebar.caption("Navigate the pages using the menu above to explore PackForge capabilities.")
+st.sidebar.caption("Navigate the pages using the menu above to explore Q-Pack capabilities.")
 
 # ── Hero Banner ───────────────────────────────────────────────────────────────
 hero_banner()

@@ -1,4 +1,4 @@
-"""Smoke test for PackForge Streamlit pages and assets."""
+"""Smoke test for Q-Pack Streamlit pages and assets."""
 
 import importlib.util
 from pathlib import Path

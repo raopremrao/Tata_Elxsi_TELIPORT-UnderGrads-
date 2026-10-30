@@ -1,4 +1,4 @@
-"""Unit tests for PackForge core schemas, units, and parameter bus."""
+"""Unit tests for Q-Pack core schemas, units, and parameter bus."""
 
 import pytest
 from pydantic import ValidationError

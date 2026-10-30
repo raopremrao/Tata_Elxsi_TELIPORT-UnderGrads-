@@ -1,4 +1,4 @@
-"""Classical Integer Simulated Annealing Optimizer for PackForge.
+"""Classical Integer Simulated Annealing Optimizer for Q-Pack.
 
 Operates directly on discrete integer indices with the true physics simulator
 in the loop and Metropolis acceptance criteria.

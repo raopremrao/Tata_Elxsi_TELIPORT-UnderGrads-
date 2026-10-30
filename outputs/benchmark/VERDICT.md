@@ -1,4 +1,4 @@
-# PackForge Optimization Benchmark: Honest Verdict
+# Q-Pack Optimization Benchmark: Honest Verdict
 
 **Benchmark Protocol**: 3 random seeds evaluated over 1053 feasible pack designs.
 Ground truth established via exhaustive simulator evaluation.

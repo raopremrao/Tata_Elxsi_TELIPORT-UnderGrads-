@@ -1,4 +1,4 @@
-# PackForge Official Computed Results Summary
+# Q-Pack Official Computed Results Summary
 
 Generated automatically by `reports/make_report.py`. All values are computed directly from the physics simulator and benchmark data.
 

@@ -1,4 +1,4 @@
-"""Sensitivity Analysis Engine for PackForge.
+"""Sensitivity Analysis Engine for Q-Pack.
 
 Implements One-At-A-Time (OAT) parameter perturbation across uncertainty ranges
 defined in ASSUMPTIONS.md, generating tornado chart data.

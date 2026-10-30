@@ -1,4 +1,4 @@
-"""Requirements Compliance Evaluator for PackForge.
+"""Requirements Compliance Evaluator for Q-Pack.
 
 Checks simulation metrics against R-01 through R-12, returning margins and pass/fail states.
 """

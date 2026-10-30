@@ -1,4 +1,4 @@
-# PackForge ⚡
+# Q-Pack ⚡
 ### Reusable Digital Platform for Designing Battery Energy Systems
 **Tata Elxsi TELIPORT Season 4 — Case Study 2**
 
@@ -30,7 +30,7 @@ Access the web dashboard in your browser at `http://localhost:8501`.
 
 ## 📌 Executive Overview
 
-PackForge is an engineering platform that synthesizes battery pack configurations for **48 V-class light electric mobility** (electric scooters and motorcycles). It replaces fragmented spreadsheets and disconnected CAD/CFD tools with a unified, multi-disciplinary parameter bus coupled with a **quantum-inspired QUBO optimization engine**.
+Q-Pack is an engineering platform that synthesizes battery pack configurations for **48 V-class light electric mobility** (electric scooters and motorcycles). It replaces fragmented spreadsheets and disconnected CAD/CFD tools with a unified, multi-disciplinary parameter bus coupled with a **quantum-inspired QUBO optimization engine**.
 
 ### Core Platform Capabilities
 1. **Multi-Disciplinary Synthesis**: Couples electrical voltage sag, lumped thermal ODE (`solve_ivp`), 2D spatial cell conduction heatmaps, CC-CV charging with thermal derating, mechanical mass/dimensions, and itemized BOM costing in a single loop.
@@ -43,7 +43,7 @@ PackForge is an engineering platform that synthesizes battery pack configuration
 
 ## 📊 Baseline Architecture Comparison
 
-All values computed directly from the PackForge physics engine under the reference 30-minute urban drive cycle:
+All values computed directly from the Q-Pack physics engine under the reference 30-minute urban drive cycle:
 
 | Architectural Metric | Design 0 (Starting Baseline) | Design A (Engineer's Choice) | Design B (LFP Safety-First) | Design Q (Optimizer Recommendation) | Target Requirement |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -77,7 +77,7 @@ Evaluated against Exhaustive Ground Truth (1,053 feasible designs) and baseline 
 ## 📁 Repository Structure
 
 ```
-packforge/
+q-pack/
 ├── app/                        # 12-page Streamlit web platform
 │   ├── Home.py                 # Executive overview & 1-click demo
 │   ├── theme.py                # Styling, CSS, and Plotly color templates
@@ -127,5 +127,5 @@ packforge/
 ---
 
 ## 🛡️ License & Safety Disclaimer
-PackForge is a virtual trade-off exploration tool. Designing physical lithium-ion systems involves significant electrical and thermal hazards. See [`docs/SAFETY.md`](file:///home/prem/VS%20Code/Projects/UnderGrads/docs/SAFETY.md) and [`docs/LIMITATIONS.md`](file:///home/prem/VS%20Code/Projects/UnderGrads/docs/LIMITATIONS.md) before attempting physical experimentation.
+Q-Pack is a virtual trade-off exploration tool. Designing physical lithium-ion systems involves significant electrical and thermal hazards. See [`docs/SAFETY.md`](file:///home/prem/VS%20Code/Projects/UnderGrads/docs/SAFETY.md) and [`docs/LIMITATIONS.md`](file:///home/prem/VS%20Code/Projects/UnderGrads/docs/LIMITATIONS.md) before attempting physical experimentation.
 

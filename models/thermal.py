@@ -1,4 +1,4 @@
-"""Thermal Subsystem Model for PackForge.
+"""Thermal Subsystem Model for Q-Pack.
 
 Implements lumped-parameter thermal ODE integration (solve_ivp) over the drive cycle,
 transient cooling dynamics, and a 2D spatial cell layout conduction gradient model.

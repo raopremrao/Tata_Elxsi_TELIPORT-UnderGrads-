@@ -1,4 +1,4 @@
-"""QUBO Construction, Surrogate Regression, and Binary Encoding for PackForge.
+"""QUBO Construction, Surrogate Regression, and Binary Encoding for Q-Pack.
 
 Maps the discrete battery design space into one-hot binary decision variables,
 fits a regularized pairwise interaction surrogate Hamiltonian from true simulations,

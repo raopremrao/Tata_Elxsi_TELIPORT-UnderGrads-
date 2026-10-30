@@ -1,4 +1,4 @@
-"""Report and Presentation Asset Generator for PackForge (`make report`).
+"""Report and Presentation Asset Generator for Q-Pack (`make report`).
 
 Generates 300 DPI high-resolution figures, CSV delta matrices, RESULTS.md,
 and SLIDE_NOTES.md mapped directly to the Tata Elxsi TELIPORT evaluation criteria.
@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 from typing import Dict, Any
 
-os.environ["MPLCONFIGDIR"] = "/tmp/mpl_packforge"
+os.environ["MPLCONFIGDIR"] = "/tmp/mpl_q-pack"
 
 import matplotlib
 matplotlib.use("Agg")
@@ -35,7 +35,7 @@ def generate_ppt_asset_bundle(output_dir: str = "outputs/ppt_assets") -> None:
     scenario = Scenario()
     cells = load_cells()
 
-    print(f"=== Generating PackForge 300 DPI Asset Bundle -> {output_dir} ===")
+    print(f"=== Generating Q-Pack 300 DPI Asset Bundle -> {output_dir} ===")
 
     # 1. Evaluate Baselines & True Optimum
     exh: ExhaustiveResults = run_exhaustive_search(scenario)
@@ -88,7 +88,7 @@ def generate_ppt_asset_bundle(output_dir: str = "outputs/ppt_assets") -> None:
         ax.annotate(name, (r.bom_cost_USD + 5, r.usable_energy_Wh + 15), fontsize=9, fontweight="bold", color=palette[name])
 
     ax.axhline(2000.0, linestyle="--", color="#FF5252", alpha=0.8, label="Req R-03 (2000 Wh)")
-    ax.set_title("PackForge Design Space & Non-Dominated Pareto Frontier", fontsize=12, fontweight="bold")
+    ax.set_title("Q-Pack Design Space & Non-Dominated Pareto Frontier", fontsize=12, fontweight="bold")
     ax.set_xlabel("Bill-of-Materials Cost (USD)", fontsize=10)
     ax.set_ylabel("Usable Energy (Wh)", fontsize=10)
     ax.legend(loc="upper left", fontsize=8)
@@ -224,7 +224,7 @@ def generate_ppt_asset_bundle(output_dir: str = "outputs/ppt_assets") -> None:
         json.dump(summary_data, f, indent=2)
 
     # Auto-Fill RESULTS.md (Section 13)
-    results_md = f"""# PackForge Official Computed Results Summary
+    results_md = f"""# Q-Pack Official Computed Results Summary
 
 Generated automatically by `reports/make_report.py`. All values are computed directly from the physics simulator and benchmark data.
 
@@ -264,7 +264,7 @@ Mapped directly to the TELIPORT Season 4 evaluation weights (Problem Understandi
 
 ### Slide 2: The Multi-Disciplinary Physics Engine (15%)
 - **Headline**: High-fidelity subsystem models with a shared parameter bus.
-- **Story**: Rather than isolated spreadsheets, PackForge couples OCV-SoC voltage sag, lumped ODE thermal conduction (`solve_ivp`), CC-CV fast charging, and bottom-up BOM costing into a single reactive loop.
+- **Story**: Rather than isolated spreadsheets, Q-Pack couples OCV-SoC voltage sag, lumped ODE thermal conduction (`solve_ivp`), CC-CV fast charging, and bottom-up BOM costing into a single reactive loop.
 - **Visual**: `outputs/ppt_assets/thermal_heatmap.png`
 
 ---

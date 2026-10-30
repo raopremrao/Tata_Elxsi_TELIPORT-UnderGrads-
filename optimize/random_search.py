@@ -1,4 +1,4 @@
-"""Random Search Baseline Optimizer for PackForge."""
+"""Random Search Baseline Optimizer for Q-Pack."""
 
 from __future__ import annotations
 import time

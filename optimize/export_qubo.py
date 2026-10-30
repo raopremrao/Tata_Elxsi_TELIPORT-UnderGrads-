@@ -1,4 +1,4 @@
-"""Hardware-Portable QUBO Exporter for PackForge.
+"""Hardware-Portable QUBO Exporter for Q-Pack.
 
 Exports QUBO formulations as dimod BinaryQuadraticModel (BQM) representations
 and JSON coordinate files for execution on D-Wave annealers or gate-model QAOA.

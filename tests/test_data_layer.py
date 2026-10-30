@@ -1,4 +1,4 @@
-"""Tests for PackForge Data Layer (Milestone M1)."""
+"""Tests for Q-Pack Data Layer (Milestone M1)."""
 
 import pandas as pd
 from core.data_loader import load_cells, load_requirements, load_components, load_drive_cycle

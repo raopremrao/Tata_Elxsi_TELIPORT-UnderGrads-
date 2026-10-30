@@ -1,4 +1,4 @@
-# PackForge Engineering Assumptions & Parameter Registry
+# Q-Pack Engineering Assumptions & Parameter Registry
 
 This document records every parameter not directly derived from official manufacturer datasheets, as mandated by Section 5 of the specification. Every assumption carries a unique ID ($A\text{-}01 \dots A\text{-}15$), numerical baseline, uncertainty range, physical rationale, and linked models.
 
@@ -29,5 +29,5 @@ This document records every parameter not directly derived from official manufac
 ---
 
 ## Sensitivity & Propagation Notice
-All values above are surfaced in the PackForge Sensitivity Analysis module (`analysis/sensitivity.py`) and can be perturbed across their specified uncertainty ranges to assess stability of the recommended design.
+All values above are surfaced in the Q-Pack Sensitivity Analysis module (`analysis/sensitivity.py`) and can be perturbed across their specified uncertainty ranges to assess stability of the recommended design.
 

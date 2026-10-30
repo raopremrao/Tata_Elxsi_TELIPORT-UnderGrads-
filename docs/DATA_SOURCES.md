@@ -1,6 +1,6 @@
-# PackForge Data Sources & Datasheet Provenance
+# Q-Pack Data Sources & Datasheet Provenance
 
-In compliance with Section 5 and Section 15 honesty rules, this document records the sources, official URLs, and verification statuses of all numerical component specifications used in PackForge. No copyrighted text is copied; only numerical engineering specifications are referenced.
+In compliance with Section 5 and Section 15 honesty rules, this document records the sources, official URLs, and verification statuses of all numerical component specifications used in Q-Pack. No copyrighted text is copied; only numerical engineering specifications are referenced.
 
 ---
 

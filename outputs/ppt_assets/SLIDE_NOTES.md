@@ -13,7 +13,7 @@ Mapped directly to the TELIPORT Season 4 evaluation weights (Problem Understandi
 
 ### Slide 2: The Multi-Disciplinary Physics Engine (15%)
 - **Headline**: High-fidelity subsystem models with a shared parameter bus.
-- **Story**: Rather than isolated spreadsheets, PackForge couples OCV-SoC voltage sag, lumped ODE thermal conduction (`solve_ivp`), CC-CV fast charging, and bottom-up BOM costing into a single reactive loop.
+- **Story**: Rather than isolated spreadsheets, Q-Pack couples OCV-SoC voltage sag, lumped ODE thermal conduction (`solve_ivp`), CC-CV fast charging, and bottom-up BOM costing into a single reactive loop.
 - **Visual**: `outputs/ppt_assets/thermal_heatmap.png`
 
 ---

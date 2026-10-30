@@ -1,4 +1,4 @@
-"""NSGA-II Multi-Objective Evolutionary Optimizer for PackForge."""
+"""NSGA-II Multi-Objective Evolutionary Optimizer for Q-Pack."""
 
 from __future__ import annotations
 import time

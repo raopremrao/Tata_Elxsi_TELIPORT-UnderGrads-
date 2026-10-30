@@ -1,4 +1,4 @@
-"""Data loader utilities for PackForge.
+"""Data loader utilities for Q-Pack.
 
 Loads and validates YAML and CSV data into frozen Pydantic schemas.
 """

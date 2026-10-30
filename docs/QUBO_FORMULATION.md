@@ -1,4 +1,4 @@
-# PackForge Quantum-Inspired Optimization: QUBO Formulation
+# Q-Pack Quantum-Inspired Optimization: QUBO Formulation
 
 This document outlines the mathematical derivation, binary encoding, quadratic surrogate regression, penalty formulations, and hardware portability pipeline implemented in `optimize/qubo_build.py` and `optimize/qubo_sa.py`.
 
@@ -63,7 +63,7 @@ The true battery simulator involves non-linear ODE integrations (`solve_ivp`), t
 
 ## 5. Vectorized Multi-Start Simulated Annealing
 
-To avoid external C-extension build failures, PackForge implements a pure vectorized NumPy simulated annealer:
+To avoid external C-extension build failures, Q-Pack implements a pure vectorized NumPy simulated annealer:
 - Tracks $N_{\text{reads}} = 100$ parallel Markov chains using 2D matrix broadcasting.
 - Geometric cooling schedule: $T_{k+1} = \alpha T_k$ from $T_0$ to $T_{\text{final}} = 0.05$.
 - Single-bit flip energy difference is computed vectorially in $\mathcal{O}(K)$ per candidate:

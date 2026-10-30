@@ -1,4 +1,4 @@
-"""Traceability Graph and Matrix Engine for PackForge.
+"""Traceability Graph and Matrix Engine for Q-Pack.
 
 Constructs a bipartite/multipartite NetworkX graph linking Requirements, Components,
 Assumptions, Models, Results, and Validation Evidence. Generates full compliance matrices

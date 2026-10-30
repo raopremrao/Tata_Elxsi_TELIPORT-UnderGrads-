@@ -1,4 +1,4 @@
-"""Monte Carlo Cell-to-Cell Variation Model for PackForge.
+"""Monte Carlo Cell-to-Cell Variation Model for Q-Pack.
 
 Propagates manufacturing cell-level capacity and impedance spreads to system-level
 pack performance, calculating weakest-group capacity bottleneck and failure probabilities.

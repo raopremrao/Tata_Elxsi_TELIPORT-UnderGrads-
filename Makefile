@@ -31,13 +31,13 @@ report:
 	$(PYTHON) -m reports.make_report || python3 -m reports.make_report
 
 run:
-	@echo "Starting PackForge Streamlit Dashboard on port 8501..."
+	@echo "Starting Q-Pack Streamlit Dashboard on port 8501..."
 	PYTHONPATH=. $(STREAMLIT) run app/Home.py --server.port 8501 || PYTHONPATH=. python3 -m streamlit run app/Home.py --server.port 8501
 
 all: test quick-benchmark report
 	@echo ""
 	@echo "=========================================================="
-	@echo " PackForge build and verification completed successfully! "
+	@echo " Q-Pack build and verification completed successfully! "
 	@echo " Run 'make run' to launch the interactive dashboard.      "
 	@echo "=========================================================="
 

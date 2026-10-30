@@ -1,4 +1,4 @@
-"""Unified Multi-Disciplinary Simulation Evaluator for PackForge.
+"""Unified Multi-Disciplinary Simulation Evaluator for Q-Pack.
 
 Single pure entry point:
     evaluate(design: PackDesign, scenario: Optional[Scenario] = None, fast: bool = False) -> EvaluationResult
@@ -36,7 +36,7 @@ from analysis.constraints import evaluate_requirements
 from analysis.conflicts import detect_conflicts
 
 
-MODEL_VERSION = "PackForge-v1.0.0"
+MODEL_VERSION = "Q-Pack-v1.0.0"
 MODEL_HASH = hashlib.sha256(MODEL_VERSION.encode()).hexdigest()[:12]
 
 # Cache dictionary for fast evaluations during optimization

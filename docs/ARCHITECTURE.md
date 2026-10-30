@@ -1,6 +1,6 @@
-# PackForge Platform Architecture
+# Q-Pack Platform Architecture
 
-This document describes the software design, multidisciplinary data flow, and subsystem integration architecture of **PackForge**.
+This document describes the software design, multidisciplinary data flow, and subsystem integration architecture of **Q-Pack**.
 
 ---
 
@@ -12,11 +12,11 @@ Battery energy system design is inherently a multi-physics, multi-objective trad
 - Mechanical packaging is decided in CAD without electrical load coupling.
 - Protection and BMS limits are configured post-design.
 
-PackForge solves this through a **reactive multi-disciplinary synthesis pipeline**: every design decision immediately propagates through electrical, thermal, mechanical, protection, and commercial models via a unified **Parameter Bus** (`DesignContext`).
+Q-Pack solves this through a **reactive multi-disciplinary synthesis pipeline**: every design decision immediately propagates through electrical, thermal, mechanical, protection, and commercial models via a unified **Parameter Bus** (`DesignContext`).
 
 ```
                     ┌────────────────────────────────────────────────────────┐
-                    │                 PackForge Web Platform                 │
+                    │                 Q-Pack Web Platform                 │
                     │               (Streamlit 12-Page Suite)                │
                     └───────────────────────────┬────────────────────────────┘
                                                 │

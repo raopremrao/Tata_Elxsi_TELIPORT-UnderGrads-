@@ -1,4 +1,4 @@
-"""Design Space Definition and Enumeration for PackForge.
+"""Design Space Definition and Enumeration for Q-Pack.
 
 Defines discrete variables, bounds, configuration filtering, and fixed baseline designs.
 """

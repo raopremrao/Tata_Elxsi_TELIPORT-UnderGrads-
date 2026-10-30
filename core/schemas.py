@@ -1,4 +1,4 @@
-"""PackForge Core Data Schemas
+"""Q-Pack Core Data Schemas
 
 Pydantic v2 data models defining shared interfaces across physics models,
 optimization routines, analysis engines, and dashboard layers.

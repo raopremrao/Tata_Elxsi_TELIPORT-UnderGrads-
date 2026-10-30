@@ -1,4 +1,4 @@
-"""Conflict Detection Rule Engine for PackForge.
+"""Conflict Detection Rule Engine for Q-Pack.
 
 Implements multidisciplinary rule checks (Section 10) identifying interface
 mismatches, safety violations, sensing gaps, and data provenance issues.

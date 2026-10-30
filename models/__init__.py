@@ -1,4 +1,4 @@
-"""PackForge Physics and Engineering Models."""
+"""Q-Pack Physics and Engineering Models."""
 
 from models.evaluate import evaluate
 from models.electrical import calculate_electrical_properties, simulate_drive_cycle_discharge

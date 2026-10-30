@@ -1,4 +1,4 @@
-"""PackForge Streamlit Web Application Package."""
+"""Q-Pack Streamlit Web Application Package."""
 
 import sys
 from pathlib import Path

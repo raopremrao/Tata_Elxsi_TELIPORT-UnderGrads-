@@ -1,4 +1,4 @@
-"""Fast Charging Subsystem Model for PackForge.
+"""Fast Charging Subsystem Model for Q-Pack.
 
 Implements CC-CV charge timing estimation (10% to 80% SoC) with thermal derating
 and cell maximum charge current limits.

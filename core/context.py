@@ -1,4 +1,4 @@
-"""DesignContext: Shared Parameter Bus for PackForge Subsystem Integration.
+"""DesignContext: Shared Parameter Bus for Q-Pack Subsystem Integration.
 
 Maintains unified state, units, provenance, and dependency tracking across
 electrical, thermal, mechanical, BMS, and cost subsystems.

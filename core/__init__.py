@@ -1,4 +1,4 @@
-"""PackForge Core Module"""
+"""Q-Pack Core Module"""
 from core.schemas import (
     Cell,
     PackDesign,

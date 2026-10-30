@@ -1,4 +1,4 @@
-"""Electrical Subsystem Model for PackForge.
+"""Electrical Subsystem Model for Q-Pack.
 
 Calculates pack nominal/max/cutoff voltages, internal impedance with busbars,
 terminal voltage sag with chemistry-specific OCV(SoC) lookup, and current flows

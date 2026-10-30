@@ -1,4 +1,4 @@
-"""PackForge UI Design System — Professional Theme, CSS & Plotly Templates."""
+"""Q-Pack UI Design System — Professional Theme, CSS & Plotly Templates."""
 
 import streamlit as st
 import plotly.graph_objects as go
@@ -33,7 +33,7 @@ _PLOTLY_LAYOUT_DEFAULTS = dict(
 
 
 def apply_plotly_theme(fig: go.Figure) -> go.Figure:
-    """Apply PackForge brand theme to any Plotly figure."""
+    """Apply Q-Pack brand theme to any Plotly figure."""
     fig.update_layout(template=PLOTLY_TEMPLATE, **_PLOTLY_LAYOUT_DEFAULTS)
     fig.update_xaxes(
         gridcolor="rgba(48,54,61,0.8)",
@@ -49,7 +49,7 @@ def apply_plotly_theme(fig: go.Figure) -> go.Figure:
 
 
 def apply_theme():
-    """Inject PackForge global CSS into the Streamlit page."""
+    """Inject Q-Pack global CSS into the Streamlit page."""
     st.markdown(
         f"""
         <style>
@@ -391,13 +391,13 @@ def apply_theme():
 
 
 def render_sidebar_scenario(scenario_name: str = "48V Urban Two-Wheeler"):
-    """Render PackForge branded sidebar with active scenario badge."""
+    """Render Q-Pack branded sidebar with active scenario badge."""
     st.sidebar.markdown(
         f"""
         <div style="padding: 0.5rem 0 1rem 0;">
             <div style="font-size:1.35rem; font-weight:800; background:linear-gradient(90deg,{PRIMARY},{SECONDARY});
                         -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
-                ⚡ PackForge
+                ⚡ Q-Pack
             </div>
             <div style="font-size:0.72rem; color:{TEXT_MUTED}; font-weight:500; letter-spacing:0.05em; text-transform:uppercase;">
                 TELIPORT Season 4 · Case Study 2
@@ -419,7 +419,7 @@ def render_sidebar_scenario(scenario_name: str = "48V Urban Two-Wheeler"):
 
 
 def page_header(title: str, subtitle: str = "", icon: str = ""):
-    """Render a consistent PackForge page header."""
+    """Render a consistent Q-Pack page header."""
     icon_html = f'<span style="margin-right:0.4rem;">{icon}</span>' if icon else ""
     st.markdown(
         f"""
@@ -490,7 +490,7 @@ def finding_card(severity: str, title: str, subsystem: str, explanation: str, fi
 
 
 def hero_banner():
-    """Render the PackForge home hero section."""
+    """Render the Q-Pack home hero section."""
     st.markdown(
         f"""
         <div class="pf-hero">
@@ -499,7 +499,7 @@ def hero_banner():
                 <span class="pf-hero-tag" style="background:rgba(0,102,153,0.15); border-color:rgba(0,102,153,0.4); color:{SECONDARY};">Case Study 2</span>
                 <span class="pf-hero-tag" style="background:rgba(255,122,0,0.12); border-color:rgba(255,122,0,0.4); color:{ACCENT};">Battery Energy Systems</span>
             </div>
-            <div class="pf-hero-title">PackForge</div>
+            <div class="pf-hero-title">Q-Pack</div>
             <div class="pf-hero-subtitle">
                 From Cell Datasheet to Defensible Battery Design in Minutes.<br>
                 Multiphysics simulation · Quantum-Inspired QUBO Optimization · Full Traceability.

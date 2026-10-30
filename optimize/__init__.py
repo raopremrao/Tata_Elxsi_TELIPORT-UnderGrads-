@@ -1,4 +1,4 @@
-"""PackForge Optimization Engine: Space, Solvers, QUBO, and Benchmark Suite."""
+"""Q-Pack Optimization Engine: Space, Solvers, QUBO, and Benchmark Suite."""
 
 from optimize.space import enumerate_design_space, get_baseline_designs
 from optimize.exhaustive import run_exhaustive_search, ExhaustiveResults
