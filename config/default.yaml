@@ -1,0 +1,57 @@
+app:
+  name: "PackForge"
+  tagline: "From cell datasheet to defensible battery design in minutes."
+  version: "1.0.0"
+
+scenario:
+  application: "48 V-Class Light Electric Mobility (Scooter/Motorcycle)"
+  ambient_temp_C: 35.0
+  drive_cycle_path: "data/drive_cycle_urban.csv"
+  duration_s: 1800
+  power_peak_kW: 6.0
+  power_continuous_kW: 2.5
+  cost_budget_USD: 450.0
+  max_mass_kg: 18.0
+  max_volume_L: 22.0
+  mc_iterations: 500
+  seed: 42
+
+weights:
+  cost: 0.25
+  peak_temp: 0.20
+  mass: 0.15
+  charge_time: 0.15
+  usable_energy: 0.15
+  cycle_life: 0.10
+
+baselines:
+  design_0:
+    name: "Design 0 (Starting Baseline)"
+    description: "Naive starting point: 13S2P NMC 18650, passive cooling, basic BMS"
+    cell_id: "panasonic_ncr18650b"
+    ns: 13
+    np: 2
+    cooling: "passive"
+    bms_tier: "basic"
+    cell_spacing_mm: 1.0
+
+  design_a:
+    name: "Design A (Engineer's Choice)"
+    description: "High capacity 21700: 14S4P NMC 21700, forced air, standard BMS"
+    cell_id: "samsung_inr21700_50e"
+    ns: 14
+    np: 4
+    cooling: "forced_air"
+    bms_tier: "standard"
+    cell_spacing_mm: 2.0
+
+  design_b:
+    name: "Design B (LFP Safety-First)"
+    description: "Safety-first LFP: 15S3P LFP 32700, forced air, standard BMS"
+    cell_id: "generic_lfp_32700"
+    ns: 15
+    np: 3
+    cooling: "forced_air"
+    bms_tier: "standard"
+    cell_spacing_mm: 2.0
+

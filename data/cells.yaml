@@ -1,0 +1,122 @@
+# PackForge Cell Library
+# Fields per cell: id, manufacturer, model, chemistry, form_factor, nominal_voltage_V,
+# max_voltage_V, cutoff_voltage_V, capacity_Ah, mass_g, diameter_mm, height_mm,
+# max_continuous_discharge_A, max_pulse_discharge_A, max_charge_A, internal_resistance_mOhm,
+# max_cell_temp_C, unit_cost_USD, cycle_life_ref, source_url, verified, notes.
+
+cells:
+  - id: "samsung_inr21700_50e"
+    manufacturer: "Samsung SDI"
+    model: "INR21700-50E"
+    chemistry: "NMC"
+    form_factor: "21700"
+    nominal_voltage_V: 3.63
+    max_voltage_V: 4.20
+    cutoff_voltage_V: 2.50
+    capacity_Ah: 5.00
+    mass_g: 69.0
+    diameter_mm: 21.25
+    height_mm: 70.80
+    max_continuous_discharge_A: 9.80
+    max_pulse_discharge_A: 14.70
+    max_charge_A: 4.90
+    internal_resistance_mOhm: 25.0
+    max_cell_temp_C: 60.0
+    unit_cost_USD: 4.85
+    cycle_life_ref: 1000
+    source_url: "https://www.orbtronic.com/content/samsung-50e-datasheet-inr21700-50e.pdf"
+    verified: true
+    notes: "High energy density 21700 cell; standard benchmark for 48V e-scooter packs."
+
+  - id: "lg_inr21700_m50lt"
+    manufacturer: "LG Energy Solution"
+    model: "INR21700-M50LT"
+    chemistry: "NMC"
+    form_factor: "21700"
+    nominal_voltage_V: 3.63
+    max_voltage_V: 4.20
+    cutoff_voltage_V: 2.50
+    capacity_Ah: 4.95
+    mass_g: 68.5
+    diameter_mm: 21.15
+    height_mm: 70.40
+    max_continuous_discharge_A: 10.00
+    max_pulse_discharge_A: 14.55
+    max_charge_A: 3.40
+    internal_resistance_mOhm: 26.0
+    max_cell_temp_C: 60.0
+    unit_cost_USD: 4.75
+    cycle_life_ref: 1000
+    source_url: "https://www.dnkpower.com/wp-content/uploads/2021/04/LG-INR21700-M50LT-Datasheet.pdf"
+    verified: true
+    notes: "Automotive-grade NMC 21700 variant with enhanced cycle life."
+
+  - id: "samsung_inr21700_40t"
+    manufacturer: "Samsung SDI"
+    model: "INR21700-40T"
+    chemistry: "NMC"
+    form_factor: "21700"
+    nominal_voltage_V: 3.60
+    max_voltage_V: 4.20
+    cutoff_voltage_V: 2.50
+    capacity_Ah: 4.00
+    mass_g: 67.0
+    diameter_mm: 21.22
+    height_mm: 70.30
+    max_continuous_discharge_A: 35.00
+    max_pulse_discharge_A: 50.00
+    max_charge_A: 6.00
+    internal_resistance_mOhm: 12.0
+    max_cell_temp_C: 80.0
+    unit_cost_USD: 5.50
+    cycle_life_ref: 600
+    source_url: "https://www.orbtronic.com/content/samsung-40t-datasheet-inr21700-40t.pdf"
+    verified: true
+    notes: "Ultra-high discharge capability (35A continuous); excellent for high peak power bursts."
+
+  - id: "panasonic_ncr18650b"
+    manufacturer: "Panasonic"
+    model: "NCR18650B"
+    chemistry: "NMC"
+    form_factor: "18650"
+    nominal_voltage_V: 3.60
+    max_voltage_V: 4.20
+    cutoff_voltage_V: 2.50
+    capacity_Ah: 3.35
+    mass_g: 47.5
+    diameter_mm: 18.50
+    height_mm: 65.30
+    max_continuous_discharge_A: 6.70
+    max_pulse_discharge_A: 10.00
+    max_charge_A: 1.62
+    internal_resistance_mOhm: 38.0
+    max_cell_temp_C: 60.0
+    unit_cost_USD: 3.20
+    cycle_life_ref: 500
+    source_url: "https://www.batteryspace.com/prod-specs/NCR18650B.pdf"
+    verified: true
+    notes: "Classic legacy 18650 cell; lower continuous discharge threshold."
+
+  - id: "generic_lfp_32700"
+    manufacturer: "Generic Industrial"
+    model: "LFP-32700-6000"
+    chemistry: "LFP"
+    form_factor: "32700"
+    nominal_voltage_V: 3.20
+    max_voltage_V: 3.65
+    cutoff_voltage_V: 2.00
+    capacity_Ah: 6.00
+    mass_g: 142.0
+    diameter_mm: 32.20
+    height_mm: 70.50
+    max_continuous_discharge_A: 18.00
+    max_pulse_discharge_A: 30.00
+    max_charge_A: 6.00
+    internal_resistance_mOhm: 8.5
+    max_cell_temp_C: 65.0
+    unit_cost_USD: 5.80
+    cycle_life_ref: 2000
+    source_url: "https://example.com/unverified-datasheet-lfp32700"
+    verified: false
+    notes: "Unverified generic 32700 LFP; exhibits superior thermal stability and cycle life, but higher mass."
+

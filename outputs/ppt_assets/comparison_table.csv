@@ -1,0 +1,8 @@
+Metric,Design 0,Design A,Design B,Design Q
+Cell Chemistry,NMC 18650,NMC 21700,LFP 32700,LFP 32700
+Configuration,13S 2P,14S 4P,15S 3P,15S 8P
+Usable Energy (Wh),248,878,772,2110
+Peak Temp (°C),560.9,67.9,48.3,37.9
+Pack Mass (kg),1.9,6.2,9.1,21.1
+BOM Cost (USD),$128,$392,$386,$832
+Reqs Satisfied,4/12,6/12,7/12,9/12

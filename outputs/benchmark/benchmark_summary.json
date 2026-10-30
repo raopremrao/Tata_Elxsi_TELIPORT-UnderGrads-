@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "n_seeds": 3,
+    "design_space_size": 1053,
+    "surrogate_r2": 0.918,
+    "surrogate_spearman": 0.937,
+    "true_optimum_design": "generic_lfp_32700_15S8P_passive_standard",
+    "true_optimum_score": 0.3493
+  },
+  "solvers": {
+    "Random_Search": {
+      "optimality_gap_mean_pct": 12.03,
+      "optimality_gap_median_pct": 11.83,
+      "optimality_gap_worst_pct": 16.82,
+      "success_rate_pct": 0.0,
+      "runtime_mean_s": 0.018,
+      "evaluations_mean": 100
+    },
+    "Integer_SA": {
+      "optimality_gap_mean_pct": 1956.36,
+      "optimality_gap_median_pct": 50.0,
+      "optimality_gap_worst_pct": 5769.08,
+      "success_rate_pct": 0.0,
+      "runtime_mean_s": 0.022,
+      "evaluations_mean": 101
+    },
+    "NSGA_II": {
+      "optimality_gap_mean_pct": 3837.87,
+      "optimality_gap_median_pct": 1441.6,
+      "optimality_gap_worst_pct": 10022.01,
+      "success_rate_pct": 0.0,
+      "runtime_mean_s": 0.061,
+      "evaluations_mean": 99
+    },
+    "QUBO_SA": {
+      "optimality_gap_mean_pct": 5.72,
+      "optimality_gap_median_pct": 7.45,
+      "optimality_gap_worst_pct": 7.51,
+      "success_rate_pct": 0.0,
+      "runtime_mean_s": 0.054,
+      "evaluations_mean": 537
+    }
+  }
+}

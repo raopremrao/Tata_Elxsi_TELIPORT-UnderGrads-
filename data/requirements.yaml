@@ -1,0 +1,99 @@
+requirements:
+  - id: "R-01"
+    text: "Nominal pack voltage between 46 V and 54 V."
+    rationale: "Aligns with standard 48 V inverter, motor controller, and auxiliary DC-DC converter architectures."
+    verification_method: "Calculated as ns * V_cell_nom from cell library."
+    target_value: 48.0
+    comparison_op: ">="
+    unit: "V"
+    min_value: 46.0
+    max_value: 54.0
+
+  - id: "R-02"
+    text: "Maximum pack voltage at or below 60 V DC."
+    rationale: "Extra-Low Voltage (ELV) regulatory safety boundary (IEC 60364-4-41) to avoid high-voltage isolation hazards."
+    verification_method: "Calculated as ns * V_cell_max."
+    target_value: 60.0
+    comparison_op: "<="
+    unit: "V"
+
+  - id: "R-03"
+    text: "Usable energy at or above 2.0 kWh (2000 Wh)."
+    rationale: "Ensures practical urban driving range (>60-70 km on typical scooter duty)."
+    verification_method: "Time-domain integral of delivered electrical power across reference drive cycle."
+    target_value: 2000.0
+    comparison_op: ">="
+    unit: "Wh"
+
+  - id: "R-04"
+    text: "Discharge power capability: 6 kW peak for 10 s; 2.5 kW continuous."
+    rationale: "Ensures vehicle acceleration and hill-climbing without exceeding cell electrical ratings."
+    verification_method: "Check pack sagged terminal voltage and resultant cell currents against datasheet limits."
+    target_value: 6000.0
+    comparison_op: ">="
+    unit: "W"
+
+  - id: "R-05"
+    text: "Cell temperature at or below 45 C during reference drive cycle at 35 C ambient; hard limit 60 C."
+    rationale: "Prevents accelerated degradation and thermal runaway initiation in tropical urban environments."
+    verification_method: "Lumped thermal ODE integration solve_ivp plus 2D spatial gradient calculation."
+    target_value: 45.0
+    comparison_op: "<="
+    unit: "C"
+
+  - id: "R-06"
+    text: "Charge from 10% to 80% SoC in 90 minutes or less without exceeding cell charge rating."
+    rationale: "Convenient turnaround for daily commuter charging without compromising battery health."
+    verification_method: "CC-CV time-domain simulation with thermal derating limits."
+    target_value: 90.0
+    comparison_op: "<="
+    unit: "min"
+
+  - id: "R-07"
+    text: "Pack mass at or below 18 kg; pack volume at or below 22 L."
+    rationale: "Vehicle handling, center of gravity, and chassis packaging constraints for two-wheelers."
+    verification_method: "Itemized mechanical mass summation and 3D bounding envelope calculation."
+    target_value: 18.0
+    comparison_op: "<="
+    unit: "kg"
+
+  - id: "R-08"
+    text: "Bill-of-materials cost at or below configurable budget (default USD 450)."
+    rationale: "Commercial market viability for affordable urban mobility products."
+    verification_method: "Bottom-up itemized BOM calculation including cells, BMS, thermal hardware, and casing."
+    target_value: 450.0
+    comparison_op: "<="
+    unit: "USD"
+
+  - id: "R-09"
+    text: "Cycle life of at least 800 cycles to 80% capacity retention."
+    rationale: "Assures 3-5 years of vehicle service life under standard commuter usage."
+    verification_method: "Empirical semi-Arrhenius and C-rate degradation surrogate model."
+    target_value: 800.0
+    comparison_op: ">="
+    unit: "cycles"
+
+  - id: "R-10"
+    text: "No cell exceeds datasheet continuous discharge current or pulse discharge limit."
+    rationale: "Prevents catastrophic cell overheating, internal shorting, and premature warranty failures."
+    verification_method: "Compare maximum pack demand currents divided by np against cell specifications."
+    target_value: 1.0
+    comparison_op: "<="
+    unit: "ratio"
+
+  - id: "R-11"
+    text: "Sensing coverage: >=1 voltage tap per group and >=1 thermistor per 6 parallel groups."
+    rationale: "Guarantees cell balancing and hotspot detection for safety compliance (AIS-156 / UN 38.3)."
+    verification_method: "Check BMS tier hardware channel capacity against series count and thermal topology."
+    target_value: 1.0
+    comparison_op: ">="
+    unit: "channels"
+
+  - id: "R-12"
+    text: "Protection thresholds: BMS cutoffs aligned with cell electrical and thermal limits."
+    rationale: "Ensures the BMS disconnects before cells enter hazardous overvoltage, undervoltage, or overtemperature states."
+    verification_method: "Rule engine cross-check of BMS parameters against cell datasheet envelope."
+    target_value: 1.0
+    comparison_op: "=="
+    unit: "aligned"
+

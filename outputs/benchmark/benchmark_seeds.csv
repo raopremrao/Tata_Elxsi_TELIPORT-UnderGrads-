@@ -1,0 +1,13 @@
+seed,solver,optimality_gap_pct,success_flag,runtime_s,evaluations_used
+1000,Random_Search,11.83,0,0.023,100
+1000,Integer_SA,50.0,0,0.024,101
+1000,NSGA_II,10022.01,0,0.078,100
+1000,QUBO_SA,2.2,0,0.054,536
+1037,Random_Search,16.82,0,0.015,100
+1037,Integer_SA,5769.08,0,0.023,101
+1037,NSGA_II,50.0,0,0.054,99
+1037,QUBO_SA,7.45,0,0.054,538
+1074,Random_Search,7.45,0,0.017,100
+1074,Integer_SA,50.0,0,0.021,101
+1074,NSGA_II,1441.6,0,0.051,100
+1074,QUBO_SA,7.51,0,0.054,537

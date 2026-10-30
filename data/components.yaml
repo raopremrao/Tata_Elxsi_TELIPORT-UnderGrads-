@@ -1,0 +1,77 @@
+bms_tiers:
+  basic:
+    id: "basic"
+    name: "Basic Analog BMS"
+    cost_base_USD: 25.0
+    cost_per_series_USD: 0.80
+    mass_base_kg: 0.35
+    max_continuous_current_A: 40.0
+    max_pulse_current_A: 60.0
+    max_voltage_taps: 16
+    thermistor_channels: 2
+    voltage_accuracy_mV: 25.0
+    features: ["Passive balancing", "Fixed hardware cutoff", "Overcurrent trip"]
+
+  standard:
+    id: "standard"
+    name: "Standard Smart BMS (CAN Bus)"
+    cost_base_USD: 45.0
+    cost_per_series_USD: 1.20
+    mass_base_kg: 0.50
+    max_continuous_current_A: 80.0
+    max_pulse_current_A: 120.0
+    max_voltage_taps: 20
+    thermistor_channels: 4
+    voltage_accuracy_mV: 10.0
+    features: ["Active balancing", "CAN 2.0B telemetry", "Configurable thresholds", "Thermal derating"]
+
+  advanced:
+    id: "advanced"
+    name: "Advanced Automotive BMS (ISO 26262 ASIL-C ready)"
+    cost_base_USD: 85.0
+    cost_per_series_USD: 2.00
+    mass_base_kg: 0.75
+    max_continuous_current_A: 120.0
+    max_pulse_current_A: 180.0
+    max_voltage_taps: 24
+    thermistor_channels: 8
+    voltage_accuracy_mV: 2.0
+    features: ["Redundant sensing", "Dual microcontrollers", "ASIL-C safety", "Coulomb counting + EKF SoC"]
+
+cooling_options:
+  passive:
+    id: "passive"
+    name: "Natural Air Convection"
+    h_eff_W_per_m2K: 10.0
+    added_mass_kg: 0.0
+    cost_USD: 0.0
+    parasitic_power_W: 0.0
+    description: "Ambient natural convection cooling; zero parasitic power, zero hardware cost."
+
+  forced_air:
+    id: "forced_air"
+    name: "Forced Air Cooling (Dual Brushless Fans)"
+    h_eff_W_per_m2K: 35.0
+    added_mass_kg: 0.85
+    cost_USD: 35.0
+    parasitic_power_W: 15.0
+    description: "Axial fan forced draft over inter-cell channels; effective thermal dissipation."
+
+  cold_plate:
+    id: "cold_plate"
+    name: "Liquid Cold Plate / Fin Array"
+    h_eff_W_per_m2K: 150.0
+    added_mass_kg: 2.20
+    cost_USD: 95.0
+    parasitic_power_W: 30.0
+    description: "Bottom aluminum cold plate with glycol loop or finned thermal spreader."
+
+mechanical:
+  enclosure_mass_fraction_of_cells: 0.18 # Casing, mounts, and brackets
+  enclosure_cost_per_kg_USD: 14.0        # Extruded aluminum / flame-retardant PC-ABS
+  busbar_resistance_per_cell_mOhm: 0.15  # Nickel-copper composite busbars
+  busbar_mass_per_cell_g: 4.5
+  busbar_cost_per_cell_USD: 0.25
+  wall_thickness_mm: 3.0
+  vertical_clearance_mm: 25.0            # BMS and busbar headroom
+

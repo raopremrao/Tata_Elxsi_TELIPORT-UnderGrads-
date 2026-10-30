@@ -1,0 +1,28 @@
+{
+  "design_0": {
+    "energy_Wh": 247.9,
+    "temp_C": 560.89,
+    "cost_USD": 128.18,
+    "mass_kg": 1.92
+  },
+  "design_a": {
+    "energy_Wh": 878.0,
+    "temp_C": 67.88,
+    "cost_USD": 392.2,
+    "mass_kg": 6.16
+  },
+  "design_b": {
+    "energy_Wh": 771.8,
+    "temp_C": 48.32,
+    "cost_USD": 386.35,
+    "mass_kg": 9.09
+  },
+  "design_q": {
+    "energy_Wh": 2110.5,
+    "temp_C": 37.92,
+    "cost_USD": 831.98,
+    "mass_kg": 21.15
+  },
+  "qubo_r2": 0.918,
+  "qubo_spearman": 0.937
+}
